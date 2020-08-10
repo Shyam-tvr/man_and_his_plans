@@ -19,6 +19,7 @@ text-align: center;
   color: #fff;
   z-index: 1;
   overflow: hidden;
+  animation: animate2 3s ease-in-out;
 }
 h2:before
 {
@@ -141,8 +142,73 @@ h3 span
   top: 200px;
   background-color: #555 /* Light Black */
 }
-h4
+h1
 {
   text-align: center;
   margin-top: 100px;
 }
+.wavy
+{
+  position: relative;
+}
+.wavy span
+{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  animation: animate1 3s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate1
+{
+  0%
+  {
+    transform: translateY(0px);
+  }
+  20%
+  {
+    transform: translateY(-25px);
+  }
+  40%,100%
+  {
+    transform: translateY(0px);
+  }
+}
+h4
+{
+  text-align: center;
+  margin-top: 10px;
+}
+.wave
+{
+  position: relative;
+  margin-top: -100px;
+}
+.wave span
+{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  animation: animate1 3s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate1
+{
+  0%
+  {
+    transform: translateY(0px);
+  }
+  20%
+  {
+    transform: translateY(-25px);
+  }
+  40%,100%
+  {
+    transform: translateY(0px);
+  }
+}
+
