@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    font-family:'Courier New', Courier, monospace;
+    font-family:fantasy;
     box-sizing: border-box;
 }
 body
@@ -23,6 +23,8 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
+
+
 .nav a {
   position: fixed;
   right: 1px;
@@ -51,6 +53,8 @@ a:hover {
   top: 230px;
   font-size: 35px;
 }
+
+
 h1
 {
 position: relative;
@@ -125,8 +129,6 @@ h2 span
 {
     color: #ff022c;
 }
-/* Style the links inside the sidenav */
-
 h3
 {
   text-align: center;
@@ -194,6 +196,8 @@ h3
     transform: translateY(0px);
   }
 }
+
+
 #services
 {
   margin-top: 200px;
@@ -245,6 +249,8 @@ h4
 {
   transform:scale(1.1)
 }
+
+
 #gallery
 {
   margin-bottom: 150px;
@@ -289,7 +295,7 @@ h4
 }
 #goto a
 {
-  padding-left: 15px; /* 15px padding */
-  color: #33363a;; /* White text color */
+  padding-left: 15px;
+  color: #33363a;
   z-index: 2;
 }
