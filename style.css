@@ -4,10 +4,12 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
 }
 body
 {
     background: #000;
+    font-family: Verdana, sans-serif;
 }
 h2
 {
@@ -83,68 +85,43 @@ h3 span
 {
   color: #ff022c;
 }
-.icon-bar 
-{
-  width: 90px; /* Set a specific width */
-  background-color: #555; /* Dark-grey background */
-}
-
-.icon-bar a {
-  margin: 0;
-  position: fixed; /* Position them relative to the browser window */
-  left: -50px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 55px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-}
-.icon-bar a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-.active {
-  background-color: #fc4f0a; /* Add an active/current color */
-}
 /* Style the links inside the sidenav */
-#mySidenav a {
+.nav a {
   margin: 0;
   position: fixed; /* Position them relative to the browser window */
-  left: -50px; /* Position them outside of the screen */
+  right: 1px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 55px; /* Set a specific width */
+  padding: 20px; /* 15px padding */
+  width: 50px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
   font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
+  color: #33363a;; /* White text color */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  z-index: 2;
 }
 
-#mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
 
 /* The about link: 20px from the top with a green background */
 #about {
   top: 20px;
-  background-color: #4CAF50;
+  font-size: 10px;
+  border-radius: 4px;
 }
 
 #blog {
-  top: 80px;
-  background-color: #2196F3; /* Blue */
+  top:90px;
+  border-radius: 4px;
 }
 
 #projects {
-  top: 140px;
-  background-color: #f44336; /* Red */
+  top: 160px;
+  border-radius: 4px;
 }
 
-#contact {
-  top: 200px;
-  background-color: #555 /* Light Black */
+#menu {
+  top: 230px;
+  font-size: 10px;
+  border-radius: 4px;
 }
 h1
 {
@@ -218,6 +195,10 @@ h4
     transform: translateY(0px);
   }
 }
+#services
+{
+  margin-top: 200px;
+}
 .row
 {
     display: flex;
@@ -226,13 +207,11 @@ h4
     margin-bottom: 275px;
     margin-right: -15px;
     margin-left: -15px;
-    margin-bottom: 200px;
 }
 h5
 {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
 .home-blog-area .single-team .team-img
 {
@@ -266,4 +245,72 @@ h5
 .home-blog-area .single-team:hover .team-img img
 {
   transform:scale(1.1)
+}
+#gallery
+{
+  margin-bottom: 150px;
+}
+.mySlides
+{
+    display:none;
+}
+h6
+{
+  text-align: center;
+}
+.button {
+  border-radius: 5px;
+  background-color: #035599;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.buttons {
+  border-radius: 5px;
+  background-color: #035599;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
 }
