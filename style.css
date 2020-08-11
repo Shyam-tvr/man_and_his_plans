@@ -87,16 +87,11 @@ h3 span
 }
 /* Style the links inside the sidenav */
 .nav a {
-  margin: 0;
   position: fixed; /* Position them relative to the browser window */
   right: 1px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 20px; /* 15px padding */
-  width: 50px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
+  padding-right: 15px; /* 15px padding */
   font-size: 20px; /* Increase font size */
   color: #33363a;; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
   z-index: 2;
 }
 
@@ -104,24 +99,23 @@ h3 span
 /* The about link: 20px from the top with a green background */
 #about {
   top: 20px;
-  font-size: 10px;
-  border-radius: 4px;
+  font-size: 45px;
 }
 
 #blog {
   top:90px;
+  font-size: 40px;
   border-radius: 4px;
 }
 
 #projects {
   top: 160px;
-  border-radius: 4px;
+  font-size: 35px;
 }
 
 #menu {
   top: 230px;
-  font-size: 10px;
-  border-radius: 4px;
+  font-size: 35px;
 }
 h1
 {
@@ -313,4 +307,10 @@ h6
 a:hover {
   color: #fff;
   text-decoration: none;
+}
+#goto a
+{
+  padding-left: 15px; /* 15px padding */
+  color: #33363a;; /* White text color */
+  z-index: 2;
 }
